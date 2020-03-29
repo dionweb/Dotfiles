@@ -25,6 +25,8 @@ PLUGINS_DIR=/usr/share/zsh/plugins/
 source $PLUGINS_DIR/zsh-autosuggestions/zsh-autosuggestions.zsh
 source $PLUGINS_DIR/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
-source /usr/share/zsh-theme-powerlevel9k/powerlevel9k.zsh-theme
+source /usr/share/zsh-theme-powerlevel10k/powerlevel9k.zsh-theme
 
 alias dotfile='git --git-dir=/home/dionysios/.dotfiles/ --work-tree=/home/dionysios'
+
+bindkey "^[[3~" delete-char
