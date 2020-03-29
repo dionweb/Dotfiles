@@ -1,10 +1,16 @@
 [ca/desrt/dconf-editor]
-saved-pathbar-path='/org/gnome/epiphany/'
-saved-view='/org/gnome/epiphany/'
+saved-pathbar-path='/org/gnome/desktop/background/'
+saved-view='/org/gnome/desktop/background/'
 show-warning=false
-window-height=496
+window-height=493
 window-is-maximized=false
 window-width=720
+
+[org/gnome/Characters]
+recent-characters=['❌', '✅']
+
+[org/gnome/GWeather]
+temperature-unit='centigrade'
 
 [org/gnome/Lollypop]
 notification-flag=2
@@ -28,7 +34,7 @@ font='Source Sans Pro 14'
 text-size='medium'
 use-system-font=false
 window-maximized=false
-window-position=(556, 255)
+window-position=(579, 270)
 window-size=(800, 600)
 
 [org/gnome/brasero/drives/drive-1781066019/data-2]
@@ -123,15 +129,23 @@ source-currency='DZD'
 source-units='degree'
 target-currency='DZD'
 target-units='radian'
-window-position=(1160, 337)
+window-position=(429, 337)
 word-size=64
 
 [org/gnome/calendar]
-active-view='month'
+active-view='week'
 weather-settings=(true, true, '', @mv nothing)
 window-maximized=false
 window-position=(807, 208)
 window-size=(861, 619)
+
+[org/gnome/cheese]
+burst-delay=1000
+camera='Intel(R) RealSense(TM) 3D Camer'
+photo-x-resolution=1920
+photo-y-resolution=1080
+video-x-resolution=1920
+video-y-resolution=1080
 
 [org/gnome/clocks]
 world-clocks=@aa{sv} []
@@ -143,6 +157,12 @@ state=87168
 
 [org/gnome/control-center]
 last-panel='wifi'
+
+[org/gnome/desktop/a11y/applications]
+screen-keyboard-enabled=false
+
+[org/gnome/desktop/a11y/keyboard]
+mousekeys-enable=false
 
 [org/gnome/desktop/app-folders]
 folder-children=['Utilities', 'Sundry', '39071cdd-1bfa-481b-ba08-f63d9e7f34d3', '01afddcc-1a19-4541-bcf3-854beb264f99']
@@ -158,9 +178,9 @@ name='Internet'
 
 [org/gnome/desktop/background]
 color-shading-type='solid'
-picture-options='zoom'
-picture-uri='file:///home/dionysios/Pictures/Wallpapers/Austria_by_Rutger_Heijmerikx%20(copy).jpg'
-primary-color='#000000'
+picture-options='stretched'
+picture-uri='file:///usr/share/backgrounds/wallpapers-juhraya/Austria_by_Rutger_Heijmerikx.jpg'
+primary-color='#ffffff'
 secondary-color='#000000'
 
 [org/gnome/desktop/calendar]
@@ -169,32 +189,34 @@ show-weekdate=false
 [org/gnome/desktop/input-sources]
 show-all-sources=false
 sources=[('xkb', 'us'), ('xkb', 'gr')]
-xkb-options=['grp:alt_shift_toggle']
+xkb-options=['grp:alt_shift_toggle', 'lv3:ralt_switch']
 
 [org/gnome/desktop/interface]
 clock-show-date=true
 clock-show-seconds=false
 clock-show-weekday=false
 cursor-blink=true
+cursor-size=24
 cursor-theme='xcursor-breeze'
 document-font-name='Source Serif Pro 12.5'
 enable-animations=true
-enable-hot-corners=true
+enable-hot-corners=false
 font-name='Source Sans Pro 12.5'
 gtk-enable-primary-paste=false
+gtk-im-module='gtk-im-context-simple'
 gtk-theme='Matcha-dark-sea'
 icon-theme='Qogir-manjaro'
 locate-pointer=false
 monospace-font-name='JetBrains Mono 12.5'
 show-battery-percentage=false
-text-scaling-factor=1.0
 toolkit-accessibility=false
 
 [org/gnome/desktop/lockdown]
 disable-lock-screen=false
 
 [org/gnome/desktop/notifications]
-application-children=['org-manjaro-pamac-manager', 'caffeine', 'firefox', 'pamac-manager', 'org-gnome-nautilus', 'org-gnome-gedit', 'gnome-power-panel', 'org-gnome-tweaks', 'uget-gtk', 'gnome-control-center', 'org-gnome-baobab', 'org-gnome-terminal', 'org-gnome-gthumb', 'gnome-network-panel', 'libreoffice-writer', 'org-gnome-screenshot', 'org-gnome-totem', 'libreoffice-calc', 'org-gnome-notes', 'firefox-developer-edition', 'virtualbox', 'transmission-gtk', 'brasero', 'gnome-shell-extension-prefs']
+application-children=['org-manjaro-pamac-manager', 'caffeine', 'firefox', 'pamac-manager', 'org-gnome-nautilus', 'org-gnome-gedit', 'gnome-power-panel', 'org-gnome-tweaks', 'uget-gtk', 'gnome-control-center', 'org-gnome-baobab', 'org-gnome-terminal', 'org-gnome-gthumb', 'gnome-network-panel', 'libreoffice-writer', 'org-gnome-screenshot', 'org-gnome-totem', 'libreoffice-calc', 'org-gnome-notes', 'firefox-developer-edition', 'virtualbox', 'transmission-gtk', 'brasero', 'gnome-shell-extension-prefs', 'system-config-printer', 'gtkhash', 'org-gnome-fileroller']
+show-banners=true
 
 [org/gnome/desktop/notifications/application/brasero]
 application-id='brasero.desktop'
@@ -220,6 +242,9 @@ application-id='gnome-power-panel.desktop'
 [org/gnome/desktop/notifications/application/gnome-shell-extension-prefs]
 application-id='gnome-shell-extension-prefs.desktop'
 
+[org/gnome/desktop/notifications/application/gtkhash]
+application-id='gtkhash.desktop'
+
 [org/gnome/desktop/notifications/application/libreoffice-calc]
 application-id='libreoffice-calc.desktop'
 
@@ -228,6 +253,9 @@ application-id='libreoffice-writer.desktop'
 
 [org/gnome/desktop/notifications/application/org-gnome-baobab]
 application-id='org.gnome.baobab.desktop'
+
+[org/gnome/desktop/notifications/application/org-gnome-fileroller]
+application-id='org.gnome.FileRoller.desktop'
 
 [org/gnome/desktop/notifications/application/org-gnome-gedit]
 application-id='org.gnome.gedit.desktop'
@@ -259,6 +287,9 @@ application-id='org.manjaro.pamac.manager.desktop'
 [org/gnome/desktop/notifications/application/pamac-manager]
 application-id='pamac-manager.desktop'
 
+[org/gnome/desktop/notifications/application/system-config-printer]
+application-id='system-config-printer.desktop'
+
 [org/gnome/desktop/notifications/application/transmission-gtk]
 application-id='transmission-gtk.desktop'
 
@@ -269,7 +300,7 @@ application-id='uget-gtk.desktop'
 application-id='virtualbox.desktop'
 
 [org/gnome/desktop/peripherals/keyboard]
-numlock-state=false
+numlock-state=true
 
 [org/gnome/desktop/peripherals/mouse]
 accel-profile='default'
@@ -278,12 +309,21 @@ natural-scroll=false
 [org/gnome/desktop/peripherals/touchpad]
 click-method='areas'
 natural-scroll=true
-speed=0.046263345195729499
+speed=0.19675090252707572
 two-finger-scrolling-enabled=true
 
 [org/gnome/desktop/privacy]
 disable-camera=true
-disable-microphone=false
+disable-microphone=true
+recent-files-max-age=-1
+
+[org/gnome/desktop/screensaver]
+color-shading-type='solid'
+lock-delay=uint32 0
+picture-options='stretched'
+picture-uri='file:///usr/share/backgrounds/wallpapers-juhraya/Austria_by_Rutger_Heijmerikx.jpg'
+primary-color='#ffffff'
+secondary-color='#000000'
 
 [org/gnome/desktop/search-providers]
 sort-order=['org.gnome.Contacts.desktop', 'org.gnome.Documents.desktop', 'org.gnome.Nautilus.desktop']
@@ -298,6 +338,7 @@ allow-volume-above-100-percent=true
 panel-main-menu=['<Alt>F1']
 
 [org/gnome/desktop/wm/preferences]
+action-middle-click-titlebar='none'
 auto-raise=false
 button-layout=':minimize,maximize,close'
 focus-mode='click'
@@ -308,13 +349,16 @@ workspace-names=@as []
 [org/gnome/epiphany]
 ask-for-default=false
 
+[org/gnome/epiphany/lockdown]
+disable-bookmark-editing=true
+
 [org/gnome/epiphany/reader]
 color-scheme='light'
 
 [org/gnome/epiphany/state]
 is-maximized=false
-window-position=(230, 107)
-window-size=(1491, 831)
+window-position=(0, 0)
+window-size=(1491, 836)
 
 [org/gnome/epiphany/sync]
 sync-device-name='dionysios’s GNOME Web on Y700'
@@ -337,7 +381,7 @@ network-monitor-gio-name=''
 
 [org/gnome/evolution]
 default-task-list='f7eb0f02621740a330947e42922f7674d92cf61e'
-version='3.34.4'
+version='3.36.0'
 
 [org/gnome/evolution/addressbook]
 completion-minimum-query-length=3
@@ -404,21 +448,22 @@ show-tabs-mode='auto'
 bottom-panel-size=140
 side-panel-active-page='GeditWindowDocumentsPanel'
 side-panel-size=200
-size=(812, 722)
+size=(812, 721)
 state=87168
 
 [org/gnome/gnome-screenshot]
 border-effect='none'
-delay=2
+delay=4
 include-border=true
 include-pointer=false
 last-save-directory='file:///home/dionysios/Pictures'
 
 [org/gnome/gnome-system-log]
-height=721
-logfile='/var/log/Calamares.log'
-logfiles=['/var/log/lastlog', '/var/log/pacman.log', '/var/log/Calamares.log', '/var/log/gufw.log']
-width=809
+fontsize=12
+height=909
+logfile='/var/log/pacman.log'
+logfiles=['/var/log/pacman.log', '/var/log/Calamares.log', '/var/log/gufw.log']
+width=901
 
 [org/gnome/gnome-system-monitor]
 cpu-colors=[(uint32 0, '#FF6E00'), (1, '#CB0C29'), (2, '#49A835'), (3, '#2D7DB3'), (4, '#f25915e815e8'), (5, '#f25915e815e8'), (6, '#f25915e815e8'), (7, '#f25915e815e8')]
@@ -449,8 +494,8 @@ sidebar-sections=['GthFileProperties:expanded', 'GthFileComment:expanded', 'GthF
 sidebar-visible=true
 sort-inverse=false
 sort-type='file::mtime'
-startup-current-file='file:///home/dionysios/Downloads/repository-open-graph-template.png'
-startup-location='file:///home/dionysios/Downloads'
+startup-current-file='file:///usr/share/grub/themes/starfield/starfield.png'
+startup-location='file:///usr/share/grub/themes/starfield'
 statusbar-visible=true
 thumbnail-list-visible=true
 use-startup-location=false
@@ -458,6 +503,15 @@ viewer-sidebar='hidden'
 viewer-thumbnails-orientation='horizontal'
 window-height=1006
 window-width=1865
+
+[org/gnome/gthumb/crop]
+aspect-ratio='none'
+aspect-ratio-height=1
+aspect-ratio-invert=false
+aspect-ratio-width=1
+bind-dimensions=false
+bind-factor=8
+grid-type='thirds'
 
 [org/gnome/gthumb/data-migration]
 catalogs-2-10=true
@@ -509,6 +563,15 @@ width=700
 automatic=true
 wrap-around=false
 
+[org/gnome/maps]
+last-viewed-location=[48.778563198889643, 9.1803646087646484]
+map-type='MapsStreetSource'
+transportation-type='pedestrian'
+window-maximized=false
+window-position=[601, 225]
+window-size=[768, 600]
+zoom-level=14
+
 [org/gnome/mutter]
 center-new-windows=false
 overlay-key='Super_L'
@@ -532,9 +595,9 @@ search-view='list-view'
 show-image-thumbnails='local-only'
 
 [org/gnome/nautilus/window-state]
-initial-size=(991, 468)
+initial-size=(997, 485)
 maximized=false
-sidebar-width=208
+sidebar-width=206
 start-with-sidebar=true
 
 [org/gnome/settings-daemon/plugins/color]
@@ -555,8 +618,9 @@ hinting='full'
 
 [org/gnome/shell]
 app-picker-view=uint32 1
-command-history=['r']
-enabled-extensions=['user-theme@gnome-shell-extensions.gcampax.github.com', 'pamac-updates@manjaro.org', 'appindicatorsupport@rgcjonas.gmail.com', 'dash-to-dock@micxgx.gmail.com']
+command-history=['r.', 'r']
+disabled-extensions=['desktop-icons@csoriano', 'ding@rastersoft.com', 'appfolders-manager@maestroschan.fr', 'unite@hardpixel.eu', 'windowsNavigator@gnome-shell-extensions.gcampax.github.com', 'window-list@gnome-shell-extensions.gcampax.github.com', 'workspace-indicator@gnome-shell-extensions.gcampax.github.com', 'screenshot-window-sizer@gnome-shell-extensions.gcampax.github.com', 'openweather-extension@jenslody.de', 'native-window-placement@gnome-shell-extensions.gcampax.github.com', 'launch-new-instance@gnome-shell-extensions.gcampax.github.com', 'gamemode@christian.kellner.me', 'gsconnect@andyholmes.github.io', 'dash-to-panel@jderose9.github.com', 'arc-menu@linxgem33.com', 'apps-menu@gnome-shell-extensions.gcampax.github.com']
+enabled-extensions=['user-theme@gnome-shell-extensions.gcampax.github.com', 'appindicatorsupport@rgcjonas.gmail.com', 'pamac-updates@manjaro.org', 'dash-to-dock@micxgx.gmail.com']
 favorite-apps=['firefox.desktop', 'org.gnome.Nautilus.desktop', 'code-oss.desktop', 'org.gnome.Screenshot.desktop', 'org.gnome.Terminal.desktop', 'pamac-manager.desktop', 'libreoffice-writer.desktop', 'firefox-developer-edition.desktop', 'virtualbox.desktop']
 had-bluetooth-devices-setup=true
 
@@ -585,14 +649,14 @@ custom-theme-running-dots-border-width=0
 custom-theme-running-dots-color='#ffffff'
 custom-theme-shrink=true
 dash-max-icon-size=35
-dock-fixed=true
+dock-fixed=false
 dock-position='LEFT'
 extend-height=true
 force-straight-corner=false
 height-fraction=0.90000000000000002
 hot-keys=true
 intellihide=true
-intellihide-mode='FOCUS_APPLICATION_WINDOWS'
+intellihide-mode='ALL_WINDOWS'
 middle-click-action='launch'
 multi-monitor=true
 preferred-monitor=0
@@ -625,6 +689,10 @@ icon-size='small'
 show-home=true
 show-trash=true
 
+[org/gnome/shell/extensions/gsconnect]
+id='4eded9eb-ea97-42ae-870a-3ed89b60ecfe'
+name='Y700'
+
 [org/gnome/shell/extensions/openweather]
 actual-city=0
 center-forecast=true
@@ -642,11 +710,19 @@ show-text-in-panel=false
 translate-condition=true
 unit='celsius'
 use-default-owm-key=true
-use-symbolic-icons=false
+use-symbolic-icons=true
 use-text-on-buttons=false
 weather-provider='openweathermap'
 wind-direction=true
 wind-speed-unit='kph'
+
+[org/gnome/shell/extensions/unite]
+greyscale-tray-icons=false
+hide-aggregate-menu-arrow=false
+hide-app-menu-arrow=true
+hide-dropdown-arrows=true
+use-system-fonts=true
+window-buttons-placement='auto'
 
 [org/gnome/shell/extensions/user-theme]
 name='Matcha-dark-sea'
@@ -656,8 +732,15 @@ display-all-workspaces=false
 grouping-mode='never'
 show-on-all-monitors=false
 
+[org/gnome/shell/weather]
+automatic-location=true
+locations=@av []
+
 [org/gnome/shell/world-clocks]
 locations=@av []
+
+[org/gnome/simple-scan]
+document-type='photo'
 
 [org/gnome/terminal/legacy]
 theme-variant='system'
@@ -693,8 +776,8 @@ window-position=[23, 15]
 window-size=[800, 597]
 
 [org/gtk/settings/color-chooser]
-custom-colors=[(0.74509803921568629, 0.80784313725490198, 0.8666666666666667, 1.0), (0.93725490196078431, 0.94901960784313721, 0.81960784313725488, 1.0), (0.92156862745098034, 0.93725490196078431, 0.95686274509803926, 1.0), (0.72941176470588232, 0.76470588235294112, 0.81176470588235294, 1.0), (1.0, 0.87586002372479244, 0.0033333333333332993, 1.0), (0.84697508896797169, 1.0, 0.0, 1.0), (0.80068888888888901, 0.91333333333333344, 0.89129420289855088, 1.0), (0.086274509803921609, 0.62745098039215685, 0.52156862745098043, 1.0)]
-selected-color=(true, 0.1803921568627451, 0.20392156862745098, 0.21176470588235294, 1.0)
+custom-colors=[(0.013333333333333308, 0.43619047619047557, 1.0, 1.0), (0.85333333333333339, 0.85333333333333339, 0.15075555555555553, 1.0), (0.0, 0.42857142857142794, 1.0, 1.0), (0.72941176470588232, 0.76470588235294112, 0.81176470588235294, 1.0), (0.18475658914728682, 0.17297777777777781, 0.18666666666666668, 1.0), (0.67843137254901964, 0.49803921568627457, 0.6588235294117647, 1.0), (0.054901960784313711, 0.41568627450980444, 0.80000000000000004, 1.0), (0.054901960784313725, 0.41568627450980394, 0.80000000000000004, 1.0)]
+selected-color=(true, 0.72941176470588232, 0.76470588235294112, 0.81176470588235294, 1.0)
 
 [org/gtk/settings/debug]
 enable-inspector-keybinding=true
@@ -706,12 +789,12 @@ location-mode='path-bar'
 show-hidden=true
 show-size-column=true
 show-type-column=true
-sidebar-width=182
+sidebar-width=194
 sort-column='name'
 sort-directories-first=true
 sort-order='ascending'
 type-format='category'
-window-position=(494, 258)
+window-position=(506, 183)
 window-size=(947, 646)
 
 [org/gtkhash]
