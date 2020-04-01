@@ -1,10 +1,10 @@
 [ca/desrt/dconf-editor]
-saved-pathbar-path='/org/gnome/desktop/background/'
-saved-view='/org/gnome/desktop/background/'
+saved-pathbar-path='/org/gnome/settings-daemon/plugins/xsettings/overrides'
+saved-view='/org/gnome/settings-daemon/plugins/xsettings/overrides'
 show-warning=false
-window-height=493
+window-height=539
 window-is-maximized=false
-window-width=720
+window-width=767
 
 [org/gnome/Characters]
 recent-characters=['❌', '✅']
@@ -14,6 +14,7 @@ temperature-unit='centigrade'
 
 [org/gnome/Lollypop]
 notification-flag=2
+volume-rate=1.0
 window-maximized=false
 window-position=[617, 242]
 window-size=[768, 600]
@@ -129,7 +130,7 @@ source-currency='DZD'
 source-units='degree'
 target-currency='DZD'
 target-units='radian'
-window-position=(429, 337)
+window-position=(537, 404)
 word-size=64
 
 [org/gnome/calendar]
@@ -156,7 +157,7 @@ size=(870, 690)
 state=87168
 
 [org/gnome/control-center]
-last-panel='wifi'
+last-panel='keyboard'
 
 [org/gnome/desktop/a11y/applications]
 screen-keyboard-enabled=false
@@ -200,15 +201,16 @@ cursor-size=24
 cursor-theme='xcursor-breeze'
 document-font-name='Source Serif Pro 12.5'
 enable-animations=true
-enable-hot-corners=false
+enable-hot-corners=true
 font-name='Source Sans Pro 12.5'
 gtk-enable-primary-paste=false
 gtk-im-module='gtk-im-context-simple'
-gtk-theme='Matcha-dark-sea'
-icon-theme='Qogir-manjaro'
+gtk-theme='Matcha-dark-azul'
+icon-theme='Tela-dark'
 locate-pointer=false
 monospace-font-name='JetBrains Mono 12.5'
 show-battery-percentage=false
+text-scaling-factor=1.0
 toolkit-accessibility=false
 
 [org/gnome/desktop/lockdown]
@@ -350,15 +352,15 @@ workspace-names=@as []
 ask-for-default=false
 
 [org/gnome/epiphany/lockdown]
-disable-bookmark-editing=true
+disable-bookmark-editing=false
 
 [org/gnome/epiphany/reader]
 color-scheme='light'
 
 [org/gnome/epiphany/state]
-is-maximized=false
+is-maximized=true
 window-position=(0, 0)
-window-size=(1491, 836)
+window-size=(0, 0)
 
 [org/gnome/epiphany/sync]
 sync-device-name='dionysios’s GNOME Web on Y700'
@@ -436,7 +438,7 @@ tree-view=true
 virtual-root='file:///home/dionysios/.config/dconf'
 
 [org/gnome/gedit/preferences/editor]
-editor-font='Hack 13'
+editor-font='JetBrains Mono 13'
 scheme='matcha'
 use-default-font=false
 wrap-last-split-mode='word'
@@ -448,7 +450,7 @@ show-tabs-mode='auto'
 bottom-panel-size=140
 side-panel-active-page='GeditWindowDocumentsPanel'
 side-panel-size=200
-size=(812, 721)
+size=(813, 721)
 state=87168
 
 [org/gnome/gnome-screenshot]
@@ -494,8 +496,8 @@ sidebar-sections=['GthFileProperties:expanded', 'GthFileComment:expanded', 'GthF
 sidebar-visible=true
 sort-inverse=false
 sort-type='file::mtime'
-startup-current-file='file:///usr/share/grub/themes/starfield/starfield.png'
-startup-location='file:///usr/share/grub/themes/starfield'
+startup-current-file='file:///home/dionysios/Videos/Screenshot%20from%202020-02-07%2021-38-54.png'
+startup-location='file:///home/dionysios/Videos'
 statusbar-visible=true
 thumbnail-list-visible=true
 use-startup-location=false
@@ -595,9 +597,9 @@ search-view='list-view'
 show-image-thumbnails='local-only'
 
 [org/gnome/nautilus/window-state]
-initial-size=(997, 485)
+initial-size=(944, 479)
 maximized=false
-sidebar-width=206
+sidebar-width=208
 start-with-sidebar=true
 
 [org/gnome/settings-daemon/plugins/color]
@@ -619,7 +621,8 @@ hinting='full'
 [org/gnome/shell]
 app-picker-view=uint32 1
 command-history=['r.', 'r']
-disabled-extensions=['desktop-icons@csoriano', 'ding@rastersoft.com', 'appfolders-manager@maestroschan.fr', 'unite@hardpixel.eu', 'windowsNavigator@gnome-shell-extensions.gcampax.github.com', 'window-list@gnome-shell-extensions.gcampax.github.com', 'workspace-indicator@gnome-shell-extensions.gcampax.github.com', 'screenshot-window-sizer@gnome-shell-extensions.gcampax.github.com', 'openweather-extension@jenslody.de', 'native-window-placement@gnome-shell-extensions.gcampax.github.com', 'launch-new-instance@gnome-shell-extensions.gcampax.github.com', 'gamemode@christian.kellner.me', 'gsconnect@andyholmes.github.io', 'dash-to-panel@jderose9.github.com', 'arc-menu@linxgem33.com', 'apps-menu@gnome-shell-extensions.gcampax.github.com']
+disable-user-extensions=false
+disabled-extensions=['desktop-icons@csoriano', 'ding@rastersoft.com', 'appfolders-manager@maestroschan.fr', 'unite@hardpixel.eu', 'windowsNavigator@gnome-shell-extensions.gcampax.github.com', 'window-list@gnome-shell-extensions.gcampax.github.com', 'workspace-indicator@gnome-shell-extensions.gcampax.github.com', 'screenshot-window-sizer@gnome-shell-extensions.gcampax.github.com', 'openweather-extension@jenslody.de', 'native-window-placement@gnome-shell-extensions.gcampax.github.com', 'launch-new-instance@gnome-shell-extensions.gcampax.github.com', 'gamemode@christian.kellner.me', 'gsconnect@andyholmes.github.io', 'arc-menu@linxgem33.com', 'apps-menu@gnome-shell-extensions.gcampax.github.com', 'dash-to-panel@jderose9.github.com']
 enabled-extensions=['user-theme@gnome-shell-extensions.gcampax.github.com', 'appindicatorsupport@rgcjonas.gmail.com', 'pamac-updates@manjaro.org', 'dash-to-dock@micxgx.gmail.com']
 favorite-apps=['firefox.desktop', 'org.gnome.Nautilus.desktop', 'code-oss.desktop', 'org.gnome.Screenshot.desktop', 'org.gnome.Terminal.desktop', 'pamac-manager.desktop', 'libreoffice-writer.desktop', 'firefox-developer-edition.desktop', 'virtualbox.desktop']
 had-bluetooth-devices-setup=true
@@ -648,13 +651,14 @@ custom-theme-running-dots-border-color='#ffffff'
 custom-theme-running-dots-border-width=0
 custom-theme-running-dots-color='#ffffff'
 custom-theme-shrink=true
-dash-max-icon-size=35
-dock-fixed=false
-dock-position='LEFT'
-extend-height=true
+dash-max-icon-size=40
+dock-fixed=true
+dock-position='BOTTOM'
+extend-height=false
 force-straight-corner=false
 height-fraction=0.90000000000000002
 hot-keys=true
+icon-size-fixed=false
 intellihide=true
 intellihide-mode='ALL_WINDOWS'
 middle-click-action='launch'
@@ -668,7 +672,7 @@ shift-click-action='minimize'
 shift-middle-click-action='launch'
 show-apps-at-top=false
 show-mounts=true
-show-show-apps-button=true
+show-show-apps-button=false
 show-trash=true
 transparency-mode='FIXED'
 unity-backlit-items=false
@@ -678,11 +682,15 @@ hotkeys-overlay-combo='TEMPORARILY'
 location-clock='STATUSLEFT'
 panel-position='BOTTOM'
 show-activities-button=false
+show-favorites=true
+show-running-apps=true
 show-show-apps-button=false
 taskbar-position='LEFTPANEL'
-trans-panel-opacity=0.40000000000000002
+trans-panel-opacity=0.0
 trans-use-custom-bg=false
+trans-use-custom-gradient=false
 trans-use-custom-opacity=false
+trans-use-dynamic-opacity=false
 
 [org/gnome/shell/extensions/desktop-icons]
 icon-size='small'
@@ -725,7 +733,7 @@ use-system-fonts=true
 window-buttons-placement='auto'
 
 [org/gnome/shell/extensions/user-theme]
-name='Matcha-dark-sea'
+name='Matcha-dark-azul'
 
 [org/gnome/shell/extensions/window-list]
 display-all-workspaces=false
@@ -794,7 +802,7 @@ sort-column='name'
 sort-directories-first=true
 sort-order='ascending'
 type-format='category'
-window-position=(506, 183)
+window-position=(394, 182)
 window-size=(947, 646)
 
 [org/gtkhash]
