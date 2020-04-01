@@ -3,9 +3,8 @@
   "workbench.iconTheme": "ayu",
   // Window
   "window.menuBarVisibility": "toggle",
-  "window.zoomLevel": 0.6,
   // Editor
-  "editor.fontSize": 16,
+  "editor.fontSize": 15.5,
   "editor.fontFamily": "'JetBrains Mono', Noto Sans",
   "editor.fontLigatures": true,
   "editor.wordWrap": "on",
@@ -72,5 +71,6 @@
   },
   "[scss]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
-  }
+  },
+  "window.zoomLevel": 0.7
 }
