@@ -19,7 +19,7 @@
   "terminal.integrated.cursorStyle": "line",
   "terminal.integrated.fontWeightBold": "400",
   "terminal.integrated.fontSize": 15,
-  "terminal.integrated.fontFamily": "'JetBrainsMono Nerd Font Mono'",
+  "terminal.integrated.fontFamily": "'JetBrains Mono', Noto Sans",
   // Include folders
   "files.exclude": {
     "**/.git": false,
