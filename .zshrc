@@ -55,7 +55,8 @@ bindkey '^[[Z' undo                                             # Shift+tab undo
 
 
 ## Alias section 
-alias cp="cp -i"                                                # Confirm before overwriting something
+alias ls='ls --color=auto'										# Colorize the output
+alias cp='cp -i'                                                # Confirm before overwriting something
 alias df='df -h'                                                # Human-readable sizes
 alias free='free -m'                                            # Show sizes in MB
 alias dotfile='git --git-dir=/home/dionysios/.dotfiles/ --work-tree=/home/dionysios'
