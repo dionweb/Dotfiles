@@ -1,13 +1,10 @@
 [ca/desrt/dconf-editor]
-saved-pathbar-path='zsh'
-saved-view='/'
+saved-pathbar-path='/org/gnome/todo/plugins/background/'
+saved-view='/org/gnome/todo/plugins/background/'
 show-warning=false
-window-height=538
+window-height=536
 window-is-maximized=false
 window-width=769
-
-[org/gnome/Characters]
-recent-characters=['🠦', '🠖', '⭢', '➜', '🗁', '📁', '❌', '✅']
 
 [org/gnome/GWeather]
 temperature-unit='centigrade'
@@ -140,6 +137,13 @@ window-maximized=false
 window-position=(503, 220)
 window-size=(861, 619)
 
+[org/gnome/charmap]
+font=@ms 'Segoe Script 25'
+last-char=uint32 40960
+
+[org/gnome/charmap/window-state]
+size=(1080, 591)
+
 [org/gnome/cheese]
 burst-delay=1000
 camera='Intel(R) RealSense(TM) 3D Camer'
@@ -157,7 +161,7 @@ size=(870, 690)
 state=87168
 
 [org/gnome/control-center]
-last-panel='background'
+last-panel='display'
 
 [org/gnome/desktop/a11y/applications]
 screen-keyboard-enabled=false
@@ -355,7 +359,7 @@ workspace-names=@as []
 ask-for-default=false
 
 [org/gnome/epiphany/lockdown]
-disable-bookmark-editing=true
+disable-bookmark-editing=false
 
 [org/gnome/epiphany/reader]
 color-scheme='light'
@@ -377,15 +381,18 @@ enable-user-css=false
 hardware-acceleration-policy='always'
 use-gnome-fonts=true
 
+[org/gnome/evince]
+document-directory=@ms 'file:///home/dionysios/Downloads/aa'
+
 [org/gnome/evince/default]
-window-ratio=(1.9305555555555556, 1.462962962962963)
+window-ratio=(1.9300544245111875, 1.192512352717598)
 
 [org/gnome/evolution-data-server]
 migrated=true
 network-monitor-gio-name=''
 
 [org/gnome/evolution]
-default-task-list='f7eb0f02621740a330947e42922f7674d92cf61e'
+default-task-list='system-task-list'
 version='3.36.0'
 
 [org/gnome/evolution/addressbook]
@@ -458,7 +465,7 @@ show-tabs-mode='auto'
 bottom-panel-size=140
 side-panel-active-page='GeditWindowDocumentsPanel'
 side-panel-size=200
-size=(813, 721)
+size=(961, 741)
 state=87168
 
 [org/gnome/gnome-screenshot]
@@ -470,10 +477,10 @@ last-save-directory='file:///home/dionysios/Pictures'
 
 [org/gnome/gnome-system-log]
 fontsize=12
-height=909
-logfile='/var/log/pacman.log'
+height=1097
+logfile='/var/log/Calamares.log'
 logfiles=['/var/log/pacman.log', '/var/log/Calamares.log', '/var/log/gufw.log']
-width=901
+width=993
 
 [org/gnome/gnome-system-monitor]
 cpu-colors=[(uint32 0, '#FF6E00'), (1, '#CB0C29'), (2, '#49A835'), (3, '#2D7DB3'), (4, '#f25915e815e8'), (5, '#f25915e815e8'), (6, '#f25915e815e8'), (7, '#f25915e815e8')]
@@ -481,7 +488,7 @@ current-tab='resources'
 maximized=false
 show-dependencies=false
 show-whose-processes='user'
-window-state=(717, 575, 526, 174)
+window-state=(717, 575, 550, 178)
 
 [org/gnome/gnome-system-monitor/disktreenew]
 col-6-visible=true
@@ -489,7 +496,7 @@ col-6-width=0
 
 [org/gnome/gnome-system-monitor/proctree]
 columns-order=[0, 1, 2, 3, 4, 6, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26]
-sort-col=0
+sort-col=15
 sort-order=0
 
 [org/gnome/gthumb/browser]
@@ -497,15 +504,15 @@ browser-sidebar-width=206
 fullscreen-sidebar='hidden'
 fullscreen-thumbnails-visible=false
 go-to-last-location=true
-maximized=true
+maximized=false
 properties-on-the-right=false
 properties-visible=false
 sidebar-sections=['GthFileProperties:expanded', 'GthFileComment:expanded', 'GthFileDetails:expanded', 'GthImageHistogram:expanded']
 sidebar-visible=true
 sort-inverse=false
 sort-type='file::mtime'
-startup-current-file='file:///home/dionysios/Documents/horizon_sky_clouds_sunset_118881_1920x1080.jpg'
-startup-location='file:///home/dionysios/Documents'
+startup-current-file='file:///home/dionysios/Pictures/eeee.png'
+startup-location='file:///home/dionysios/Pictures'
 statusbar-visible=true
 thumbnail-list-visible=true
 use-startup-location=false
@@ -605,7 +612,7 @@ search-view='list-view'
 show-image-thumbnails='local-only'
 
 [org/gnome/nautilus/window-state]
-initial-size=(997, 496)
+initial-size=(999, 497)
 maximized=false
 sidebar-width=208
 start-with-sidebar=true
@@ -618,6 +625,7 @@ night-light-temperature=uint32 3279
 
 [org/gnome/settings-daemon/plugins/power]
 idle-dim=true
+power-button-action='suspend'
 sleep-inactive-ac-type='nothing'
 sleep-inactive-battery-timeout=1200
 sleep-inactive-battery-type='nothing'
@@ -628,10 +636,10 @@ hinting='full'
 
 [org/gnome/shell]
 app-picker-view=uint32 1
-command-history=['r.', 'gconf-editor', 'dconf-editor', '', 'e', 'r']
+command-history=['r.', 'gconf-editor', 'dconf-editor', '', 'e', 'bash', 'zsh', 'gnome-terminal', 'files', 'nautilus', 'r']
 disable-user-extensions=false
 disabled-extensions=['desktop-icons@csoriano', 'appfolders-manager@maestroschan.fr', 'apps-menu@gnome-shell-extensions.gcampax.github.com', 'auto-move-windows@gnome-shell-extensions.gcampax.github.com', 'ding@rastersoft.com', 'gamemode@christian.kellner.me', 'workspace-indicator@gnome-shell-extensions.gcampax.github.com', 'windowsNavigator@gnome-shell-extensions.gcampax.github.com', 'window-list@gnome-shell-extensions.gcampax.github.com', 'unite@hardpixel.eu', 'screenshot-window-sizer@gnome-shell-extensions.gcampax.github.com', 'drive-menu@gnome-shell-extensions.gcampax.github.com', 'places-menu@gnome-shell-extensions.gcampax.github.com', 'openweather-extension@jenslody.de', 'native-window-placement@gnome-shell-extensions.gcampax.github.com', 'launch-new-instance@gnome-shell-extensions.gcampax.github.com', 'horizontal-workspaces@gnome-shell-extensions.gcampax.github.com', 'gsconnect@andyholmes.github.io', 'dash-to-panel@jderose9.github.com', 'arc-menu@linxgem33.com']
-enabled-extensions=['appindicatorsupport@rgcjonas.gmail.com', 'user-theme@gnome-shell-extensions.gcampax.github.com', 'pamac-updates@manjaro.org', 'dash-to-dock@micxgx.gmail.com']
+enabled-extensions=['appindicatorsupport@rgcjonas.gmail.com', 'pamac-updates@manjaro.org', 'user-theme@gnome-shell-extensions.gcampax.github.com', 'dash-to-dock@micxgx.gmail.com']
 favorite-apps=['firefox.desktop', 'org.gnome.Nautilus.desktop', 'code-oss.desktop', 'org.gnome.Screenshot.desktop', 'org.gnome.Terminal.desktop', 'pamac-manager.desktop', 'firefox-developer-edition.desktop', 'libreoffice-writer.desktop', 'virtualbox.desktop']
 had-bluetooth-devices-setup=true
 
@@ -639,7 +647,7 @@ had-bluetooth-devices-setup=true
 debug=false
 
 [org/gnome/shell/extensions/arc-menu]
-arc-menu-placement='DTD'
+arc-menu-placement='Panel'
 avatar-style='Circular'
 border-color='rgb(63,62,64)'
 button-icon-padding=0
@@ -677,7 +685,7 @@ menu-foreground-color='rgba(211, 218, 227, 1)'
 menu-height=550
 menu-hotkey='Undefined'
 menu-keybinding=['<Super>x']
-menu-layout='GnomeDash'
+menu-layout='Runner'
 menu-margin=0
 menu-width=290
 mint-pinned-app-list=['Firefox', 'firefox', 'firefox.desktop', 'Terminal', 'utilities-terminal', 'org.gnome.Terminal.desktop', 'Settings', 'emblem-system-symbolic', 'gnome-control-center.desktop', 'Software', 'system-software-install-symbolic', 'pamac-manager.desktop', 'Files', 'system-file-manager', 'org.gnome.Nautilus.desktop', 'Log Out', 'application-exit-symbolic', 'ArcMenu_LogOut', 'Lock', 'changes-prevent-symbolic', 'ArcMenu_Lock', 'Power Off', 'system-shutdown-symbolic', 'ArcMenu_PowerOff']
@@ -698,8 +706,6 @@ vert-separator=false
 [org/gnome/shell/extensions/dash-to-dock]
 animate-show-apps=true
 animation-time=0.20000000000000001
-apply-custom-theme=false
-autohide=true
 background-color='#1b1d24'
 background-opacity=0.56999999999999995
 click-action='minimize-or-overview'
@@ -716,10 +722,8 @@ extend-height=false
 force-straight-corner=false
 height-fraction=0.90000000000000002
 hot-keys=true
-icon-size-fixed=true
-intellihide=true
+icon-size-fixed=false
 intellihide-mode='ALL_WINDOWS'
-isolate-workspaces=false
 middle-click-action='launch'
 multi-monitor=true
 preferred-monitor=0
@@ -727,9 +731,10 @@ require-pressure-to-show=true
 running-indicator-dominant-color=false
 running-indicator-style='DEFAULT'
 scroll-action='switch-workspace'
+scroll-switch-workspace=false
 shift-click-action='minimize'
 shift-middle-click-action='launch'
-show-apps-at-top=false
+show-show-apps-button=true
 show-windows-preview=true
 transparency-mode='DYNAMIC'
 
@@ -896,11 +901,15 @@ use-theme-colors=true
 visible-name='Sea'
 
 [org/gnome/terminal/legacy/profiles:/:cc0c0966-9e3b-43e4-8f6c-7c9f82a009c8]
+background-color='rgb(56,60,74)'
+bold-color-same-as-fg=true
 bold-is-bright=false
 cursor-shape='ibeam'
+default-size-rows=20
 font='Source Code Pro 12.5'
 foreground-color='rgb(220,233,235)'
-palette=['rgb(0,0,0)', 'rgb(252,65,56)', 'rgb(0,205,0)', 'rgb(255,255,0)', 'rgb(52,152,219)', 'rgb(205,0,205)', 'rgb(0,205,205)', 'rgb(229,229,229)', 'rgb(127,127,127)', 'rgb(255,0,0)', 'rgb(0,255,0)', 'rgb(205,205,0)', 'rgb(92,92,255)', 'rgb(255,0,255)', 'rgb(0,255,255)', 'rgb(255,255,255)']
+palette=['rgb(56,60,74)', 'rgb(221,44,0)', 'rgb(22,160,133)', 'rgb(255,211,29)', 'rgb(52,152,219)', 'rgb(205,0,205)', 'rgb(0,205,205)', 'rgb(229,229,229)', 'rgb(127,127,127)', 'rgb(255,0,0)', 'rgb(186,230,126)', 'rgb(205,205,0)', 'rgb(92,92,255)', 'rgb(255,0,255)', 'rgb(0,255,255)', 'rgb(255,255,255)']
+use-system-font=false
 use-theme-colors=true
 visible-name='Azul'
 
@@ -912,8 +921,8 @@ window-position=[23, 15]
 window-size=[800, 597]
 
 [org/gtk/settings/color-chooser]
-custom-colors=[(0.0030444444444444139, 0.79196148148148204, 0.91333333333333344, 1.0), (0.86274509803921573, 0.9137254901960784, 0.92156862745098034, 1.0), (1.0, 0.0, 0.0, 1.0), (0.89803921568627454, 0.89803921568627454, 0.89803921568627454, 1.0), (0.054901960784313725, 0.69803921568627447, 0.60392156862745094, 1.0), (0.05490196078431378, 0.69803921568627447, 0.60392156862745083, 1.0), (0.0035555555555555193, 0.53333333333333333, 0.0035555555555555193, 1.0), (0.0035555555555555783, 0.53333333333333333, 0.0035555555555555783, 1.0)]
-selected-color=(true, 0.86274509803921573, 0.9137254901960784, 0.92156862745098034, 1.0)
+custom-colors=[(0.27058823529411763, 0.27450980392156865, 0.28627450980392155, 1.0), (0.2196078431372549, 0.23529411764705882, 0.29019607843137257, 1.0), (0.72941176470588232, 0.90196078431372551, 0.49411764705882349, 1.0), (0.56862745098039214, 0.70196078431372544, 0.3843137254901961, 1.0), (0.086274509803921609, 0.62745098039215685, 0.52156862745098043, 1.0), (0.72941176470588232, 0.90196078431372551, 0.49411764705882355, 1.0), (0.086274509803921567, 0.62745098039215685, 0.52156862745098043, 1.0), (1.0, 0.82745098039215681, 0.11372549019607847, 1.0)]
+selected-color=(true, 0.2196078431372549, 0.23529411764705882, 0.29019607843137257, 1.0)
 
 [org/gtk/settings/debug]
 enable-inspector-keybinding=true
@@ -930,7 +939,7 @@ sort-column='name'
 sort-directories-first=true
 sort-order='ascending'
 type-format='category'
-window-position=(486, 192)
+window-position=(486, 199)
 window-size=(947, 646)
 
 [org/gtkhash]
