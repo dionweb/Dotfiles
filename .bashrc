@@ -70,9 +70,9 @@ if ${use_color} ; then
 	fi
 
 	if [[ ${EUID} == 0 ]] ; then
-		PS1='\[\033[01;31m\][\h\[\033[01;36m\] \W\[\033[01;31m\]]\$\[\033[00m\] '
+		PS1='\[\033[01;31m\][\h\[\033[01;34m\] \W\[\033[01;31m\]]\$\[\033[00m\] '
 	else
-		PS1='\[\033[01;32m\][\u@\h\[\033[01;37m\] \W\[\033[01;32m\]]\$\[\033[00m\] '
+		PS1="\[\033[01;32m\]\[\033[01;34m\]\W\[\033[01;32m\]\033[33m\]\$(parse_git_branch)\[\033[00m\]\n➜ "
 	fi
 
 	alias ls='ls --color=auto'
@@ -89,12 +89,12 @@ else
 fi
 
 unset use_color safe_term match_lhs sh
-
 alias cp="cp -i"                          # confirm before overwriting something
 alias df='df -h'                          # human-readable sizes
 alias free='free -m'                      # show sizes in MB
 alias np='nano -w PKGBUILD'
 alias more=less
+alias dotfile='git --git-dir=/home/dionysios/.dotfiles/ --work-tree=/home/dionysios'
 
 xhost +local:root > /dev/null 2>&1
 
@@ -118,24 +118,27 @@ shopt -s histappend
 # # usage: ex <file>
 ex ()
 {
-  if [ -f $1 ] ; then
-    case $1 in
-      *.tar.bz2)   tar xjf $1   ;;
-      *.tar.gz)    tar xzf $1   ;;
-      *.bz2)       bunzip2 $1   ;;
-      *.rar)       unrar x $1     ;;
-      *.gz)        gunzip $1    ;;
-      *.tar)       tar xf $1    ;;
-      *.tbz2)      tar xjf $1   ;;
-      *.tgz)       tar xzf $1   ;;
-      *.zip)       unzip $1     ;;
-      *.Z)         uncompress $1;;
-      *.7z)        7z x $1      ;;
-      *)           echo "'$1' cannot be extracted via ex()" ;;
-    esac
-  else
-    echo "'$1' is not a valid file"
-  fi
+	if [ -f $1 ] ; then
+		case $1 in
+			*.tar.bz2)   tar xjf $1   ;;
+			*.tar.gz)    tar xzf $1   ;;
+			*.bz2)       bunzip2 $1   ;;
+			*.rar)       unrar x $1   ;;
+			*.gz)        gunzip $1    ;;
+			*.tar)       tar xf $1    ;;
+			*.tbz2)      tar xjf $1   ;;
+			*.tgz)       tar xzf $1   ;;
+			*.zip)       unzip $1     ;;
+			*.Z)         uncompress $1;;
+			*.7z)        7z x $1      ;;
+			*)           echo "'$1' cannot be extracted via ex()" ;;
+		esac
+	else
+		echo "'$1' is not a valid file"
+	fi
 }
 
-alias dotfile='git --git-dir=/home/dionysios/.dotfiles/ --work-tree=/home/dionysios'
+
+parse_git_branch() {
+	git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (\1)/'
+}
