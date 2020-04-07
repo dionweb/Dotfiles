@@ -21,10 +21,7 @@ zstyle ':completion:*' cache-path ~/.zsh/cache
 HISTFILE=~/.zhistory
 HISTSIZE=1000
 SAVEHIST=500
-#export EDITOR=/usr/bin/nano
-#export VISUAL=/usr/bin/nano
 WORDCHARS=${WORDCHARS//\/[&.;]}                                 # Don't consider certain characters part of the word
-
 
 ## Keybindings section
 bindkey -e
@@ -34,7 +31,7 @@ if [[ "${terminfo[khome]}" != "" ]]; then
   bindkey "${terminfo[khome]}" beginning-of-line                # [Home] - Go to beginning of line
 fi
 bindkey '^[[8~' end-of-line                                     # End key
-bindkey '^[[F' end-of-line                                     # End key
+bindkey '^[[F' end-of-line                                      # End key
 if [[ "${terminfo[kend]}" != "" ]]; then
   bindkey "${terminfo[kend]}" end-of-line                       # [End] - Go to end of line
 fi
@@ -53,9 +50,11 @@ bindkey '^[[1;5C' forward-word                                  #
 bindkey '^H' backward-kill-word                                 # delete previous word with ctrl+backspace
 bindkey '^[[Z' undo                                             # Shift+tab undo last action
 
-
-## Alias section 
+## Alias section
 alias ls='ls --color=auto'										# Colorize the output
+alias grep='grep --colour=auto'
+alias egrep='egrep --colour=auto'
+alias fgrep='fgrep --colour=auto'
 alias cp='cp -i'                                                # Confirm before overwriting something
 alias df='df -h'                                                # Human-readable sizes
 alias free='free -m'                                            # Show sizes in MB
@@ -66,78 +65,71 @@ autoload -U compinit colors zcalc
 compinit -d
 colors
 
-# enable substitution for prompt
 setopt prompt_subst
 
-# Prompt
-PROMPT="%B%{$fg[blue]%}%(4~|%-1~/.../%2~|%~)%u%b ➜ "
+# Shows status of git when in git repository (code adapted from https://joshdick.net/2017/06/08/my_git_prompt_for_zsh_revisited.html)
+git_info() {
 
+	# Exit if not inside a Git repository
+	! git rev-parse --is-inside-work-tree > /dev/null 2>&1 && return
 
-# Print a greeting message when shell is started
-echo $USER@$HOST  $(uname -srm) $(lsb_release -rcs)
-## Prompt on right side:
-#  - shows status of git when in git repository (code adapted from https://techanic.net/2012/12/30/my_git_prompt_for_zsh.html)
-#  - shows exit status of previous command (if previous command finished with an error)
-#  - is invisible, if neither is the case
+	# Git branch/tag, or name-rev if on detached head
+	local GIT_LOCATION=${$(git symbolic-ref -q HEAD || git name-rev --name-only --no-undefined --always HEAD)#(refs/heads/|tags/)}
 
-# Modify the colors and symbols in these variables as desired.
-GIT_PROMPT_SYMBOL="%{$fg[blue]%}±"                              # plus/minus     - clean repo
-GIT_PROMPT_PREFIX="%{$fg[green]%}[%{$reset_color%}"
-GIT_PROMPT_SUFFIX="%{$fg[green]%}]%{$reset_color%}"
-GIT_PROMPT_AHEAD="%{$fg[red]%}ANUM%{$reset_color%}"             # A"NUM"         - ahead by "NUM" commits
-GIT_PROMPT_BEHIND="%{$fg[cyan]%}BNUM%{$reset_color%}"           # B"NUM"         - behind by "NUM" commits
-GIT_PROMPT_MERGING="%{$fg_bold[magenta]%}⚡︎%{$reset_color%}"     # lightning bolt - merge conflict
-GIT_PROMPT_UNTRACKED="%{$fg_bold[red]%}●%{$reset_color%}"       # red circle     - untracked files
-GIT_PROMPT_MODIFIED="%{$fg_bold[yellow]%}●%{$reset_color%}"     # yellow circle  - tracked files modified
-GIT_PROMPT_STAGED="%{$fg_bold[green]%}●%{$reset_color%}"        # green circle   - staged changes present = ready for "git push"
-
-parse_git_branch() {
-  # Show Git branch/tag, or name-rev if on detached head
-  ( git symbolic-ref -q HEAD || git name-rev --name-only --no-undefined --always HEAD ) 2> /dev/null
-}
-
-parse_git_state() {
-  # Show different symbols as appropriate for various Git repository states
-  # Compose this value via multiple conditional appends.
-  local GIT_STATE=""
-  local NUM_AHEAD="$(git log --oneline @{u}.. 2> /dev/null | wc -l | tr -d ' ')"
-  if [ "$NUM_AHEAD" -gt 0 ]; then
-    GIT_STATE=$GIT_STATE${GIT_PROMPT_AHEAD//NUM/$NUM_AHEAD}
-  fi
-  local NUM_BEHIND="$(git log --oneline ..@{u} 2> /dev/null | wc -l | tr -d ' ')"
-  if [ "$NUM_BEHIND" -gt 0 ]; then
-    GIT_STATE=$GIT_STATE${GIT_PROMPT_BEHIND//NUM/$NUM_BEHIND}
-  fi
-  local GIT_DIR="$(git rev-parse --git-dir 2> /dev/null)"
-  if [ -n $GIT_DIR ] && test -r $GIT_DIR/MERGE_HEAD; then
-    GIT_STATE=$GIT_STATE$GIT_PROMPT_MERGING
-  fi
-  if [[ -n $(git ls-files --other --exclude-standard 2> /dev/null) ]]; then
-    GIT_STATE=$GIT_STATE$GIT_PROMPT_UNTRACKED
-  fi
-  if ! git diff --quiet 2> /dev/null; then
-    GIT_STATE=$GIT_STATE$GIT_PROMPT_MODIFIED
-  fi
-  if ! git diff --cached --quiet 2> /dev/null; then
-    GIT_STATE=$GIT_STATE$GIT_PROMPT_STAGED
-  fi
-  if [[ -n $GIT_STATE ]]; then
-    echo "$GIT_PROMPT_PREFIX$GIT_STATE$GIT_PROMPT_SUFFIX"
-  fi
-}
-
-git_prompt_string() {
-  local git_where="$(parse_git_branch)"
+	local AHEAD="%{$fg_bold[green]%}⇡NUM%{$reset_color%}"
+	local BEHIND="%{$fg_bold[green]%}⇣NUM%{$reset_color%}"
+	local MERGING="%{$fg[cyan]%}⚡︎%{$reset_color%}"
+	local UNTRACKED="%{$fg[red]%}⏺ %{$reset_color%}"
+	local MODIFIED="%{$fg[yellow]%}⏺ %{$reset_color%}"
+	local STAGED="%{$fg[green]%}⏺%{$reset_color%}"
   
-  # If inside a Git repository, print its branch and state
-  [ -n "$git_where" ] && echo "$GIT_PROMPT_SYMBOL$(parse_git_state)$GIT_PROMPT_PREFIX" on "%{$fg[yellow]%}${git_where#(refs/heads/|tags/)}$GIT_PROMPT_SUFFIX"
-  
-  # If not inside the Git repo, print exit codes of last command (only if it failed)
-  [ ! -n "$git_where" ] && echo "%{$fg[red]%} %(?..[%?])"
+	local -a DIVERGENCES
+	local -a FLAGS
+
+	local NUM_AHEAD="$(git log --oneline @{u}.. 2> /dev/null | wc -l | tr -d ' ')"
+ 	if [ "$NUM_AHEAD" -gt 0 ]; then
+		DIVERGENCES+=( "${AHEAD//NUM/$NUM_AHEAD}" )
+	fi
+
+	local NUM_BEHIND="$(git log --oneline ..@{u} 2> /dev/null | wc -l | tr -d ' ')"
+	if [ "$NUM_BEHIND" -gt 0 ]; then
+		DIVERGENCES+=( "${BEHIND//NUM/$NUM_BEHIND}" )
+	fi
+
+	local GIT_DIR="$(git rev-parse --git-dir 2> /dev/null)"
+	if [ -n $GIT_DIR ] && test -r $GIT_DIR/MERGE_HEAD; then
+		FLAGS+=( "$MERGING" )
+	fi
+
+	if [[ -n $(git ls-files --other --exclude-standard 2> /dev/null) ]]; then
+		FLAGS+=( "$UNTRACKED" )
+	fi
+
+	if ! git diff --quiet 2> /dev/null; then
+		FLAGS+=( "$MODIFIED" )
+	fi
+
+	if ! git diff --cached --quiet 2> /dev/null; then
+		FLAGS+=( "$STAGED" )
+	fi
+
+	local -a GIT_INFO
+	GIT_INFO+=( "$fg_bold[white]on % $fg_bold[yellow]%1;$GIT_LOCATION%{$reset_color%}" )
+	[ -n "$GIT_STATUS" ] && GIT_INFO+=( "$GIT_STATUS" )
+	[[ ${#DIVERGENCES[@]} -ne 0 ]] && GIT_INFO+=( "${(j::)DIVERGENCES}" )
+	[[ ${#FLAGS[@]} -ne 0 ]] && GIT_INFO+=( "${(j::)FLAGS}" )
+	echo "${(j: :)GIT_INFO}"
 }
 
-# Right prompt with git-branch and exit status of previus command
-RPROMPT='$(git_prompt_string) %(?.%{$fg[green]%}✓ %{$reset_color%}.%{$fg[red]%}✗ %{$reset_color%})'
+precmd() { 
+	precmd() { 
+		print "" 
+	} 
+}
+
+## Prompt
+PROMPT='$fg_bold[blue]%(4~|%-1~/.../%3~|%~)%u%b $(git_info)
+%(?.%{$fg[white]%}.%{$fg[red]%})%(!.#.➜)%{$reset_color%} '
 
 # Color man pages
 export LESS_TERMCAP_mb=$'\E[01;34m'
@@ -148,7 +140,6 @@ export LESS_TERMCAP_so=$'\E[01;47;34m'
 export LESS_TERMCAP_ue=$'\E[0m'
 export LESS_TERMCAP_us=$'\E[01;32m'
 export LESS=-r
-
 
 ## Plugins section:
 # Use syntax highlighting
@@ -161,4 +152,3 @@ ZSH_HIGHLIGHT_STYLES[path]='fg=7'
 source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 ZSH_AUTOSUGGEST_BUFFER_MAX_SIZE=20
 ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=8'
-
