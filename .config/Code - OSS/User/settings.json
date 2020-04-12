@@ -66,11 +66,11 @@
   "update.enableWindowsBackgroundUpdates": false,
   // Prettier
   "editor.formatOnPaste": true,
-  "editor.formatOnSave": true,
   "[vue]": {
     "editor.defaultFormatter": "octref.vetur"
   },
   "[scss]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
-  }
+  },
+  "editor.formatOnSave": true
 }
