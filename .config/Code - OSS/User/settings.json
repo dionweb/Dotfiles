@@ -1,76 +1,19 @@
 {
-  "workbench.colorTheme": "Ayu Mirage",
-  "workbench.iconTheme": "ayu",
-  // Window
-  "window.menuBarVisibility": "toggle",
-  "window.zoomLevel": 0.7,
-  // Editor
-  "editor.fontSize": 16,
-  "editor.fontFamily": "'JetBrains Mono', Noto Sans",
-  "editor.fontLigatures": true,
-  "editor.wordWrap": "on",
-  // Editor - smoothies
-  "editor.smoothScrolling": true,
-  "editor.cursorBlinking": "smooth",
-  "editor.cursorSmoothCaretAnimation": true,
-  "editor.multiCursorModifier": "alt",
-  // Terminal
-  "terminal.integrated.cursorBlinking": true,
-  "terminal.integrated.cursorStyle": "line",
-  "terminal.integrated.fontWeightBold": "400",
-  "terminal.integrated.fontSize": 15,
-  "terminal.integrated.fontFamily": "'JetBrains Mono', Noto Sans",
-  // Include folders
-  "files.exclude": {
-    "**/.git": false,
-    "**/.vuepress": false
-  },
-  // Font ligatures
-  "editor.tokenColorCustomizations": {
-    "textMateRules": [
-      {
-        "scope": [
-          // Following will be in italic
-          // Scope naming ---> https://www.sublimetext.com/docs/3/scope_naming.html
-          "comment",
-          "entity.name.type.class",
-          "keyword",
-          "constant",
-          "storage.modifier",
-          "storage.type.class.js"
-        ],
-        "settings": {
-          "fontStyle": "italic"
-        }
-      },
-      {
-        "scope": [
-          // Following will be excluded from italics
-          "invalid",
-          "keyword.operator",
-          "constant.numeric.css",
-          "keyword.other.unit.px.css",
-          "constant.numeric.decimal.js",
-          "constant.numeric.json"
-        ],
-        "settings": {
-          "fontStyle": "italic"
-        }
-      }
-    ]
-  },
-  // Disable updates and telemetry
-  "telemetry.enableTelemetry": false,
-  "telemetry.enableCrashReporter": false,
-  "update.mode": "none",
-  "update.enableWindowsBackgroundUpdates": false,
-  // Prettier
-  "editor.formatOnPaste": true,
-  "[vue]": {
-    "editor.defaultFormatter": "octref.vetur"
-  },
-  "[scss]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "editor.formatOnSave": true
+    "workbench.colorTheme": "Palenight Theme",
+    "window.menuBarVisibility": "toggle",
+    "editor.wordWrap": "on",
+    "editor.fontFamily": "Jetbrains Mono",
+    "editor.fontLigatures": true,
+    "editor.fontSize": 15.5,
+    "editor.formatOnSave": true,
+    "prettier.tabWidth": 4,
+    "terminal.integrated.cursorStyle": "line",
+    "terminal.integrated.cursorBlinking": true,
+    "files.exclude": {
+        "**/.git": false,
+        "**/.vuepress": false
+    },
+    "telemetry.enableTelemetry": false,
+    "telemetry.enableCrashReporter": false,
+    "update.mode": "none"
 }
