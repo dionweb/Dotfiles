@@ -1,24 +1,10 @@
-@import url("/usr/share/themes/Matcha-dark-azul/gnome-shell/gnome-shell.css");
+@import url("/usr/share/themes/Matcha-light-azul/gnome-shell/gnome-shell.css");
+
 
 stage {
-    font-size: 11.5pt;
+    font-size: 9.1pt;
 }
 
-#panel .panel-button{
-	font-weight: normal;
-}
-.calendar-day-base {
-	font-size: 11pt;
-}
-
-.calendar-day-base.calendar-day-heading {
-	font-size: 11pt;
-}
-
-.modal-dialog-linked-button {
-	font-size: 11.5pt;
-}
-
-.osd-window .level {
-	-barlevel-active-background-color: #3498db;
+StEntry {
+	font-size: 9.1pt;
 }
