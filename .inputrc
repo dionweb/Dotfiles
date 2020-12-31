@@ -1,6 +1,6 @@
-set completion-ignore-case on			# Ignore case sensitivity (Tab completion)
-set colored-stats on				# Color files by types
-set visible-stats on				# Append char to indicate type
-set mark-symlinked-directories on		# Mark symlinked directories
-set colored-completion-prefix on		# Color the common prefix
-set menu-complete-display-prefix on	# Color the common prefix in menu-complete
+set completion-ignore-case on				# Ignore case sensitivity (Tab completion)
+set colored-stats on					# Color files by types
+set visible-stats on					# Append char to indicate type
+set mark-symlinked-directories on			# Mark symlinked directories
+set colored-completion-prefix on			# Color the common prefix
+set menu-complete-display-prefix on		# Color the common prefix in menu-complete
