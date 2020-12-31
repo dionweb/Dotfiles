@@ -1,0 +1,47 @@
+[CompactMode]
+FontWeight=50
+
+[DetailsMode]
+FontWeight=50
+
+[General]
+RememberOpenedTabs=false
+ShowSpaceInfo=false
+ShowZoomSlider=false
+Version=200
+ViewPropsTimestamp=2020,12,23,13,20,10
+
+[IconsMode]
+FontWeight=50
+IconSize=64
+
+[KPropertiesDialog]
+HDMI1 Height 1080=458
+HDMI1 Width 1920=428
+
+[MainWindow]
+HDMI1 Height 1080=668
+HDMI1 Width 1920=1029
+HDMI1 XPosition=445
+HDMI1 YPosition=197
+MenuBar=Disabled
+State=AAAA/wAAAAD9AAAAAwAAAAAAAADdAAACdvwCAAAAAvsAAAAUAHAAbABhAGMAZQBzAEQAbwBjAGsBAAAAJgAAAnYAAABdAQAAA/sAAAAWAGYAbwBsAGQAZQByAHMARABvAGMAawAAAAGwAAABQgAAAAoBAAADAAAAAQAAALgAAALM/AIAAAAB+wAAABAAaQBuAGYAbwBEAG8AYwBrAAAAACYAAALMAAAACgEAAAMAAAADAAAELQAAANb8AQAAAAH7AAAAGAB0AGUAcgBtAGkAbgBhAGwARABvAGMAawAAAAAAAAAELQAAAAoBAAADAAADJwAAAnYAAAAEAAAABAAAAAgAAAAI/AAAAAEAAAACAAAAAQAAABYAbQBhAGkAbgBUAG8AbwBsAEIAYQByAQAAAAD/////AAAAAAAAAAA=
+ToolBarsMovable=Disabled
+
+[Open-with settings]
+CompletionMode=1
+History=kat
+
+[PlacesPanel]
+IconSize=22
+
+[PreviewSettings]
+Plugins=appimagethumbnail,audiothumbnail,blenderthumbnail,comicbookthumbnail,cursorthumbnail,djvuthumbnail,ebookthumbnail,exrthumbnail,directorythumbnail,fontthumbnail,pothumbnail,imagethumbnail,jpegthumbnail,kraorathumbnail,windowsexethumbnail,windowsimagethumbnail,mobithumbnail,opendocumentthumbnail,gsthumbnail,designerthumbnail,rawthumbnail,svgthumbnail,ffmpegthumbs
+
+[SettingsDialog]
+HDMI1 Height 1080=440
+HDMI1 Width 1920=589
+
+[ViewPropertiesDialog]
+HDMI1 Height 1080=306
+HDMI1 Width 1920=375
