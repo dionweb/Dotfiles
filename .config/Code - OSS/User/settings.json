@@ -1,0 +1,45 @@
+{
+   "window.menuBarVisibility": "toggle",
+   /* Editor */
+   "editor.fontSize": 15,
+   "editor.fontFamily": "'Hack'",
+   "editor.wordWrap": "on",
+   "editor.fontLigatures": true,
+   /* Terminal */
+   "terminal.integrated.fontSize": 15,
+   "terminal.integrated.fontFamily": "'Hack'",
+   /* Don't hide */
+   "files.exclude": {
+      "**/.git": false,
+      "**/.vuepress": false
+   },
+   /* Format */
+   "editor.formatOnSave": true,
+   "prettier.tabWidth": 3,
+   "editor.tabSize": 3,
+   "[javascript]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode"
+   },
+   "[json]": {
+      "editor.defaultFormatter": "vscode.json-language-features"
+   },
+   "[jsonc]": {
+      "editor.defaultFormatter": "vscode.json-language-features"
+   },
+   "[vue]": {
+      "editor.defaultFormatter": "octref.vetur"
+   },
+   "[css]": {
+      "editor.defaultFormatter": "HookyQR.beautify"
+   },
+   "[scss]": {
+      "editor.defaultFormatter": "HookyQR.beautify"
+   },
+   "[html]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode"
+   },
+   /* Telemetry */
+   "telemetry.enableTelemetry": false,
+   "telemetry.enableCrashReporter": false,
+   "update.mode": "none",
+}
