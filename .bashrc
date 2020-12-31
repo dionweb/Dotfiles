@@ -56,8 +56,8 @@ export LESS_TERMCAP_ue=$'\E[0m'		# Reset underline
 
 # Shopt
 
-shopt -s autocd					# Auto cd
-shopt -s cdspell					# Correct misspelling in a cd command
+shopt -s autocd                    # Auto cd
+shopt -s cdspell                   # Correct misspelling in a cd command
 
 
 # Functions
