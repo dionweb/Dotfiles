@@ -1,0 +1,39 @@
+[General]
+FreeFloating=false
+HistoryEnabled=false
+RetainPriorSearch=false
+
+[PlasmaRunnerManager]
+LaunchCounts=2 locations_openunknown,2 shell_ls .config,1 services_applications:org.kde.konsole.desktop,1 Kill Runner_gwenview,1 services_applications:org.kde.gwenview.desktop,1 Kill Runner_kgpg,1 services_applications:spellchecking.desktop
+
+[Plugins]
+CharacterRunnerEnabled=true
+DictionaryEnabled=true
+Kill RunnerEnabled=true
+PIM Contacts Search RunnerEnabled=true
+PowerDevilEnabled=true
+Spell CheckerEnabled=false
+baloosearchEnabled=true
+bookmarksEnabled=true
+browsertabsEnabled=true
+calculatorEnabled=true
+desktopsessionsEnabled=true
+katesessionsEnabled=true
+kdevelopsessionsEnabled=true
+konsoleprofilesEnabled=true
+krunner_appstreamEnabled=true
+ktp_contactsEnabled=true
+kwinEnabled=true
+locationsEnabled=true
+marbleEnabled=true
+org.kde.activitiesEnabled=true
+org.kde.datetimeEnabled=true
+org.kde.windowedwidgetsEnabled=true
+placesEnabled=true
+plasma-desktopEnabled=true
+recentdocumentsEnabled=true
+servicesEnabled=true
+shellEnabled=true
+unitconverterEnabled=true
+webshortcutsEnabled=true
+windowsEnabled=true
