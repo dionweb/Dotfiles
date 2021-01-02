@@ -1,10 +1,12 @@
 {
+   /* Window */
    "window.menuBarVisibility": "toggle",
    /* Editor */
    "editor.fontSize": 15,
    "editor.fontFamily": "'Hack'",
    "editor.wordWrap": "on",
    "editor.fontLigatures": true,
+   "editor.tabSize": 3,
    /* Terminal */
    "terminal.integrated.fontSize": 15,
    "terminal.integrated.fontFamily": "'Hack'",
@@ -13,10 +15,11 @@
       "**/.git": false,
       "**/.vuepress": false
    },
-   /* Format */
-   "editor.formatOnSave": true,
+   /* Extensions - Prettier */
    "prettier.tabWidth": 3,
-   "editor.tabSize": 3,
+   "prettier.singleQuote": true,
+   /* Formatting */
+   "editor.formatOnSave": true,
    "[javascript]": {
       "editor.defaultFormatter": "esbenp.prettier-vscode"
    },
@@ -42,4 +45,15 @@
    "telemetry.enableTelemetry": false,
    "telemetry.enableCrashReporter": false,
    "update.mode": "none",
+   /* Theming */
+   "workbench.iconTheme": "material-icon-theme",
+   "workbench.colorCustomizations": {
+      "activityBar.background": "#31363b",
+      /*"sideBar.background": "#232629",
+      "editor.background": "#232629",
+      "activityBarBadge.background": "#2980b9",
+      "statusBar.background": "#2980b9",
+      "tab.inactiveBackground": "#31363b",
+      "list.focusBackground": "#3daee6", */
+   },
 }
