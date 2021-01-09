@@ -121,6 +121,12 @@ ForegroundNormal=239,240,241
 ForegroundPositive=39,174,96
 ForegroundVisited=127,140,141
 
+[DialogIcons]
+Size=24
+
+[DirSelect Dialog]
+DirSelectDialog Size=795,568
+
 [General]
 AllowKDEAppsToRememberWindowPositions=false
 BrowserApplication=firefox.desktop
@@ -132,13 +138,14 @@ shadeSortColumn=true
 widgetStyle=Breeze
 
 [Icons]
-Theme=breeze-dark
+Theme=Papirus-Dark
 
 [KDE]
 ColorScheme=Breeze
 LookAndFeelPackage=org.kde.breezedark.desktop
 ShowDeleteCommand=false
 contrast=4
+widgetStyle=Breeze
 
 [KFileDialog Settings]
 Allow Expansion=false
