@@ -46,6 +46,16 @@ sudo pacman -S --needed breeze breeze-gtk breeze-icons
 sudo pacman -S --needed ttf-fira-code ttf-hack ttf-ibm-plex ttf-liberation noto-fonts noto-fonts-emoji
 ```
 
+## List of installed packages
+
+Keeping a list of all the explicitly installed packages can be useful, to backup a system for example or speed up installation on a new system.
+
+To install them run the command bellow
+
+```
+sudo pacman -S --needed - < ~/.github/pkglist.txt
+```
+
 ## License
 
 MIT License
