@@ -138,7 +138,7 @@ shadeSortColumn=true
 widgetStyle=Breeze
 
 [Icons]
-Theme=Papirus-Dark
+Theme=breeze-dark
 
 [KDE]
 ColorScheme=Breeze
@@ -147,29 +147,8 @@ ShowDeleteCommand=false
 contrast=4
 widgetStyle=Breeze
 
-[KFileDialog Settings]
-Allow Expansion=false
-Automatically select filename extension=true
-Breadcrumb Navigation=true
-Decoration position=2
-LocationCombo Completionmode=5
-PathCombo Completionmode=5
-Show Bookmarks=false
-Show Full Path=false
-Show Inline Previews=true
-Show Preview=false
-Show Speedbar=true
-Show hidden files=true
-Sort by=Name
-Sort directories first=true
-Sort reversed=false
-Speedbar Width=184
-View Style=DetailTree
-
-[PreviewSettings]
-MaximumRemoteSize=0
-
 [WM]
+FakeEntryToKeepThisGroup=true
 activeBackground=49,54,59
 activeBlend=255,255,255
 activeForeground=239,240,241
