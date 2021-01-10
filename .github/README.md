@@ -54,6 +54,11 @@ To install them run the command bellow
 
 ```
 sudo pacman -S --needed - < ~/.github/pkglist.txt
+
+# OR
+
+curl https://raw.githubusercontent.com/dionweb/Dotfiles/master/.github/pkglist.txt > pkglist.txt && sudo pacman -S --needed - < pkglist.txt && rm pkglist.txt
+
 ```
 
 ## License
