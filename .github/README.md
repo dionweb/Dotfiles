@@ -15,6 +15,23 @@ this.repo was created to sync my dotfiles
 wget -O - https://raw.githubusercontent.com/dionweb/Shell-scripts/master/Dotfiles.sh | bash
 ```
 
+## Fonts
+
+| Name       | Description                                                                                 | Package                                                                        |
+| ---------- | ------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------ |
+| Fira Code  | Monospaced font with programming ligatures                                                  | [ttf-fira-code](https://archlinux.org/packages/community/any/ttf-fira-code/)   |
+| Hack       | A hand groomed and optically balanced typeface based on Bitstream Vera Mono.                | [ttf-hack](https://archlinux.org/packages/extra/any/ttf-hack/)                 |
+| IBM Plex   | IBM Plex Mono, Sans, and Serif                                                              | [ttf-ibm-plex](https://archlinux.org/packages/community/any/ttf-ibm-plex/)     |
+| Liberation | Font family which aims at metric compatibility with Arial, Times New Roman, and Courier New | [ttf-liberation](https://archlinux.org/packages/community/any/ttf-liberation/) |
+| Noto       | Google Noto TTF fonts                                                                       | [noto-fonts](https://archlinux.org/packages/extra/any/noto-fonts/)             |
+| Noto Emoji | Google Noto emoji fonts                                                                     | [noto-fonts-emoji](https://archlinux.org/packages/extra/any/noto-fonts-emoji/) |
+
+### Install fonts
+
+```
+sudo pacman -S --needed ttf-fira-code ttf-hack ttf-ibm-plex ttf-liberation noto-fonts noto-fonts-emoji
+```
+
 ## License
 
 MIT License
