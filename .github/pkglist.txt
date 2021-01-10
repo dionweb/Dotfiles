@@ -18,7 +18,6 @@ dosfstools
 drkonqi
 efibootmgr
 elisa
-epson-inkjet-printer-escpr
 fakeroot
 ffmpegthumbs
 filelight
