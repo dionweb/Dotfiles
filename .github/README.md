@@ -43,11 +43,8 @@ sudo pacman -S nano nano-syntax-highlighting
 ## Install dotfiles to another system
 
 ```
-
 # Dotfiles init
-
 wget -O - https://raw.githubusercontent.com/dionweb/Shell-scripts/master/Dotfiles.sh | bash
-
 ```
 
 ## Theme and icons
@@ -61,9 +58,7 @@ wget -O - https://raw.githubusercontent.com/dionweb/Shell-scripts/master/Dotfile
 ### Install theme and icons
 
 ```
-
 sudo pacman -S --needed breeze breeze-gtk breeze-icons
-
 ```
 
 ## Fonts
@@ -80,9 +75,7 @@ sudo pacman -S --needed breeze breeze-gtk breeze-icons
 ### Install fonts
 
 ```
-
 sudo pacman -S --needed ttf-fira-code ttf-hack ttf-ibm-plex ttf-liberation noto-fonts noto-fonts-emoji
-
 ```
 
 ## List of installed packages
@@ -92,13 +85,9 @@ Keeping a list of all the explicitly installed packages can be useful, to backup
 To install them run the command bellow
 
 ```
-
 sudo pacman -S --needed - < ~/.github/pkglist.txt
-
 # OR
-
 curl https://raw.githubusercontent.com/dionweb/Dotfiles/master/.github/pkglist.txt > pkglist.txt && sudo pacman -S --needed - < pkglist.txt && rm pkglist.txt
-
 ```
 
 ## License
