@@ -4,9 +4,9 @@
 
 this.repo was created to sync my dotfiles
 
-![Screenshot](https://raw.githubusercontent.com/dionweb/Dotfiles/master/.screenshots/Dot1.png)
+![Screenshot](https://raw.githubusercontent.com/dionweb/Dotfiles/master/.github/Dot1.png)
 
-![Screenshot](https://raw.githubusercontent.com/dionweb/Dotfiles/master/.screenshots/Dot2.png)
+![Screenshot](https://raw.githubusercontent.com/dionweb/Dotfiles/master/.github/Dot2.png)
 
 ## Installing dotfiles to another system
 
