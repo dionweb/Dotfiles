@@ -6,5 +6,7 @@ SaveGeometryOnExit=false
 ShowMenuBarByDefault=false
 
 [MainWindow]
+HDMI1 XPosition=954
+HDMI1 YPosition=430
 MenuBar=Disabled
 ToolBarsMovable=Disabled
