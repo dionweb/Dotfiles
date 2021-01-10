@@ -11,15 +11,43 @@ this.repo was created to sync my dotfiles
 # Table of Contents
 
 1. [Install dotfiles to another system](#install-dotfiles-to-another-system)
-2. [Theme and icons](#theme-and-icons)
-3. [Fonts](#fonts)
-4. [List of installed packages](#list-of-installed-packages)
+2. [Terminal customization](#terminal-customization)
+   -  [Git prompt](#git-prompt)
+   -  [Nano and syntax highlighting](#nano-and-syntax-highlighting)
+3. [Theme and icons](#theme-and-icons)
+4. [Fonts](#fonts)
+5. [List of installed packages](#list-of-installed-packages)
+
+## Terminal customization
+
+### Git prompt
+
+The [Git](https://archlinux.org/packages/extra/x86_64/git/) package comes with a prompt script.
+
+Full example on .bashrc file [here](https://github.com/dionweb/Dotfiles/blob/master/.bashrc). (_#Sources, #Git prompt shell variables, #Prompt_)
+
+```
+sudo pacman -S git
+```
+
+### Nano and syntax highlighting
+
+Install [nano](https://archlinux.org/packages/core/x86_64/nano/) and [nano-syntax-highlighting](https://archlinux.org/packages/community/any/nano-syntax-highlighting/)
+
+Nano configuration file can be found [here](https://github.com/dionweb/Dotfiles/blob/master/.config/nano/nanorc)
+
+```
+sudo pacman -S nano nano-syntax-highlighting
+```
 
 ## Install dotfiles to another system
 
 ```
+
 # Dotfiles init
+
 wget -O - https://raw.githubusercontent.com/dionweb/Shell-scripts/master/Dotfiles.sh | bash
+
 ```
 
 ## Theme and icons
@@ -33,7 +61,9 @@ wget -O - https://raw.githubusercontent.com/dionweb/Shell-scripts/master/Dotfile
 ### Install theme and icons
 
 ```
+
 sudo pacman -S --needed breeze breeze-gtk breeze-icons
+
 ```
 
 ## Fonts
@@ -50,7 +80,9 @@ sudo pacman -S --needed breeze breeze-gtk breeze-icons
 ### Install fonts
 
 ```
+
 sudo pacman -S --needed ttf-fira-code ttf-hack ttf-ibm-plex ttf-liberation noto-fonts noto-fonts-emoji
+
 ```
 
 ## List of installed packages
@@ -60,11 +92,13 @@ Keeping a list of all the explicitly installed packages can be useful, to backup
 To install them run the command bellow
 
 ```
+
 sudo pacman -S --needed - < ~/.github/pkglist.txt
 
 # OR
 
 curl https://raw.githubusercontent.com/dionweb/Dotfiles/master/.github/pkglist.txt > pkglist.txt && sudo pacman -S --needed - < pkglist.txt && rm pkglist.txt
+
 ```
 
 ## License
@@ -90,3 +124,7 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
+
+```
+
+```
