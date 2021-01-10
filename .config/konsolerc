@@ -6,10 +6,5 @@ SaveGeometryOnExit=false
 ShowMenuBarByDefault=false
 
 [MainWindow]
-HDMI1 Height 1080=478
-HDMI1 Width 1920=846
-HDMI1 XPosition=382
-HDMI1 YPosition=370
 MenuBar=Disabled
-State=AAAA/wAAAAD9AAAAAAAAA04AAAHeAAAABAAAAAQAAAAIAAAACPwAAAAA
 ToolBarsMovable=Disabled
