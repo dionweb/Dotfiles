@@ -59,17 +59,7 @@ export LESS_TERMCAP_ue=$'\E[0m'         # Reset underline
 shopt -s autocd                         # Auto cd
 shopt -s cdspell                        # Correct misspelling in a cd command
 
-
-# Functions
-
-colors() {
-	for i in {0..255..1}
-	do
-		tput setaf $i
-		echo -e "Color $i"
-	done
-	tput sgr0
-}
+# Node Version Manager
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
