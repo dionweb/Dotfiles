@@ -15,6 +15,20 @@ this.repo was created to sync my dotfiles
 wget -O - https://raw.githubusercontent.com/dionweb/Shell-scripts/master/Dotfiles.sh | bash
 ```
 
+## Theme and icons
+
+| Name         | Description                                                                   | Package                                                                |
+| ------------ | ----------------------------------------------------------------------------- | ---------------------------------------------------------------------- |
+| Breeze       | Artwork, styles and assets for the Breeze visual style for the Plasma Desktop | [breeze](https://archlinux.org/packages/extra/x86_64/breeze/)          |
+| Breeze gtk   | Breeze widget theme for GTK 2 and 3                                           | [breeze-gtk](https://archlinux.org/packages/extra/any/breeze-gtk/)     |
+| Breeze icons | Breeze icon themes                                                            | [breeze-icons](https://archlinux.org/packages/extra/any/breeze-icons/) |
+
+### Install theme and icons
+
+```
+sudo pacman -S --needed breeze breeze-gtk breeze-icons
+```
+
 ## Fonts
 
 | Name       | Description                                                                                 | Package                                                                        |
