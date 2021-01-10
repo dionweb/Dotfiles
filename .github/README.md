@@ -8,7 +8,14 @@ this.repo was created to sync my dotfiles
 
 ![Screenshot](https://raw.githubusercontent.com/dionweb/Dotfiles/master/.github/Dot2.png)
 
-## Installing dotfiles to another system
+# Table of Contents
+
+1. [Install dotfiles to another system](#install-dotfiles-to-another-system)
+2. [Theme and icons](#theme-and-icons)
+3. [Fonts](#fonts)
+4. [List of installed packages](#list-of-installed-packages)
+
+## Install dotfiles to another system
 
 ```
 # Dotfiles init
