@@ -10,17 +10,29 @@ this.repo was created to sync my dotfiles
 
 # Table of Contents
 
-1. [Install dotfiles to another system](#install-dotfiles-to-another-system)
-2. [Terminal customization](#terminal-customization)
-   -  [Git prompt](#git-prompt)
-   -  [Nano and syntax highlighting](#nano-and-syntax-highlighting)
-3. [Theme and icons](#theme-and-icons)
-4. [Fonts](#fonts)
-5. [List of installed packages](#list-of-installed-packages)
+-  [Install dotfiles to another system](#install-dotfiles-to-another-system)
+-  [Theming](#theming)
+   -  [Terminal customization](#terminal-customization)
+      -  [Git prompt](#git-prompt)
+      -  [Nano and syntax highlighting](#nano-and-syntax-highlighting)
+   -  [Theme and icons](#theme-and-icons)
+      -  [Install theme and icons](#install-theme-and-icons)
+   -  [Fonts](#fonts)
+      -  [Install fonts](#install-fonts)
+-  [List of installed packages](#list-of-installed-packages)
 
-## Terminal customization
+## Install dotfiles to another system
 
-### Git prompt
+```
+# Dotfiles init
+wget -O - https://raw.githubusercontent.com/dionweb/Shell-scripts/master/Dotfiles.sh | bash
+```
+
+## Theming
+
+### Terminal customization
+
+#### Git prompt
 
 The [Git](https://archlinux.org/packages/extra/x86_64/git/) package comes with a prompt script.
 
@@ -30,7 +42,7 @@ Full example on .bashrc file [here](https://github.com/dionweb/Dotfiles/blob/mas
 sudo pacman -S git
 ```
 
-### Nano and syntax highlighting
+#### Nano and syntax highlighting
 
 Install [nano](https://archlinux.org/packages/core/x86_64/nano/) and [nano-syntax-highlighting](https://archlinux.org/packages/community/any/nano-syntax-highlighting/)
 
@@ -40,14 +52,7 @@ Nano configuration file can be found [here](https://github.com/dionweb/Dotfiles/
 sudo pacman -S nano nano-syntax-highlighting
 ```
 
-## Install dotfiles to another system
-
-```
-# Dotfiles init
-wget -O - https://raw.githubusercontent.com/dionweb/Shell-scripts/master/Dotfiles.sh | bash
-```
-
-## Theme and icons
+### Theme and icons
 
 | Name         | Description                                                                   | Package                                                                |
 | ------------ | ----------------------------------------------------------------------------- | ---------------------------------------------------------------------- |
@@ -55,13 +60,13 @@ wget -O - https://raw.githubusercontent.com/dionweb/Shell-scripts/master/Dotfile
 | Breeze gtk   | Breeze widget theme for GTK 2 and 3                                           | [breeze-gtk](https://archlinux.org/packages/extra/any/breeze-gtk/)     |
 | Breeze icons | Breeze icon themes                                                            | [breeze-icons](https://archlinux.org/packages/extra/any/breeze-icons/) |
 
-### Install theme and icons
+#### Install theme and icons
 
 ```
 sudo pacman -S --needed breeze breeze-gtk breeze-icons
 ```
 
-## Fonts
+### Fonts
 
 | Name       | Description                                                                                 | Package                                                                        |
 | ---------- | ------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------ |
@@ -72,7 +77,7 @@ sudo pacman -S --needed breeze breeze-gtk breeze-icons
 | Noto       | Google Noto TTF fonts                                                                       | [noto-fonts](https://archlinux.org/packages/extra/any/noto-fonts/)             |
 | Noto Emoji | Google Noto emoji fonts                                                                     | [noto-fonts-emoji](https://archlinux.org/packages/extra/any/noto-fonts-emoji/) |
 
-### Install fonts
+#### Install fonts
 
 ```
 sudo pacman -S --needed ttf-fira-code ttf-hack ttf-ibm-plex ttf-liberation noto-fonts noto-fonts-emoji
@@ -113,7 +118,3 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
-
-```
-
-```
