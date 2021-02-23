@@ -24,7 +24,7 @@ alias dotfile='git --git-dir=/home/dionysios/.dotfiles/ --work-tree=/home/dionys
 
 [ -r /usr/share/git/completion/git-completion.bash ] && . /usr/share/git/completion/git-completion.bash       # Source git completion
 [ -r /usr/share/git/completion/git-prompt.sh ] && . /usr/share/git/completion/git-prompt.sh         # Source git prompt
-
+[ -r /usr/share/bash-completion/bash_completion   ] && . /usr/share/bash-completion/bash_completion		# Source bash completion
 
 # Git prompt shell variables
 

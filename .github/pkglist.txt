@@ -3,6 +3,7 @@ audiocd-kio
 autoconf
 automake
 base
+bash-completion
 binutils
 bison
 bluedevil
