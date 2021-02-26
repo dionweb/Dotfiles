@@ -1,1 +1,2 @@
 epson-inkjet-printer-escpr
+paru
