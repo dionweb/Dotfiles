@@ -141,7 +141,7 @@ menuFont=IBM Plex Sans,10,-1,5,50,0,0,0,0,0
 shadeSortColumn=true
 smallestReadableFont=IBM Plex Sans,8,-1,5,50,0,0,0,0,0
 toolBarFont=IBM Plex Sans,10,-1,5,50,0,0,0,0,0
-widgetStyle=Breeze
+widgetStyle=breeze
 
 [Icons]
 Theme=breeze-dark
