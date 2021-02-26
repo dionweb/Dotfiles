@@ -4,12 +4,14 @@ autoconf
 automake
 base
 bash-completion
+bat
 binutils
 bison
 bluedevil
 bluez-utils
 breeze
 breeze-gtk
+chromium
 code
 cups
 dialog
