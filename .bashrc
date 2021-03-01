@@ -7,11 +7,13 @@
 
 # Aliases
 
-alias ls='ls --color=auto'              # Colorize ls
+alias ls='exa -l'                       # Replace ls with exa
+alias la='exa -la'                      # Don't ignore hidden files
+# alias ls='ls --color=auto'              # Colorize ls
+# alias la='ls -a'                        # Don't ignore hidden files
 alias grep='grep --color=auto'          # Colorize grep
 alias diff='diff --color=auto'          # Colorize diff
 alias ip='ip --color=auto'              # Colorize ip
-alias la='ls -a'                        # Don't ignore hidden files
 alias df='df -h'                        # Human-readable sizes
 alias free='free -m'                    # Show sizes in MB
 alias cp='cp -i'                        # Confirm before overwriting
