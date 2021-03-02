@@ -4,13 +4,10 @@
 
 [[ $- != *i* ]] && return               # If not running interactively, don't do anything
 
-
 # Aliases
 
-alias ls='exa -l'                       # Replace ls with exa
-alias la='exa -la'                      # Don't ignore hidden files
-# alias ls='ls --color=auto'              # Colorize ls
-# alias la='ls -a'                        # Don't ignore hidden files
+alias ls='exa -lh --color=always --group-directories-first'            # Replace ls with exa
+alias la='exa -lha --color=always --group-directories-first'           # Don't ignore hidden files
 alias grep='grep --color=auto'          # Colorize grep
 alias diff='diff --color=auto'          # Colorize diff
 alias ip='ip --color=auto'              # Colorize ip
@@ -19,7 +16,8 @@ alias free='free -m'                    # Show sizes in MB
 alias cp='cp -i'                        # Confirm before overwriting
 alias mv='mv -i'                        # -//-
 alias rm='rm -i'                        # -//-
-alias dotfile='git --git-dir=/home/dionysios/.dotfiles/ --work-tree=/home/dionysios'
+alias dotfile='git --git-dir=/home/dionysios/.dotfiles/ --work-tree=/home/dionysios'      # Dotfiles
+alias prime="__GLX_VENDOR_LIBRARY_NAME=nvidia __NV_PRIME_RENDER_OFFLOAD=1"                # PRIME render offloading
 
 
 # Sources
