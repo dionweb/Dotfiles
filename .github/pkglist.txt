@@ -88,6 +88,7 @@ linux-headers
 m4
 make
 markdownpart
+mesa-demos
 milou
 mtools
 nano
@@ -98,6 +99,7 @@ networkmanager
 noto-fonts-emoji
 ntfs-3g
 nvidia
+nvidia-settings
 nvidia-utils
 okular
 os-prober

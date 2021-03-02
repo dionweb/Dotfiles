@@ -1,2 +1,3 @@
 epson-inkjet-printer-escpr
 paru
+system76-power
